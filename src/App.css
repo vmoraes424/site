@@ -1,68 +1,99 @@
-.App h1 {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.menu .logo {
+  text-transform: uppercase;
+  cursor: pointer;
   color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+.menu .botao {
+  cursor: pointer;
+}
+.menu .botao .linha-menu {
+  width: 25px;
+  display: flex;
+  background-color: white;
+  height: 4px;
+  margin: 4px;
+  border-radius: 10px;
+}
+.linha {
+  height: 70px;
+  background-color: white;
+  width: 2px;
+  display: flex;
+  justify-content: center;
   position: relative;
-  top: 150px;
-  font-weight: 200;
+  place-items: center;
+}
+.container {
+  display: flex;
+  color: white;
+  align-items: center;
+  width: 50%;
+  height: 70vh;
+  flex-direction: column;
+  position: relative;
+  top: 15vh;
+}
+.imagem {
+  display: block;
+  background-image: url('img/foto.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+.container .nome {
+  display: flex;
+  font-size: 30px;
+}
+.container .profissao {
+  display: flex;
+  padding: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.container .btns {
+  display: flex;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+  justify-content: center;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  top: 10px;
+  position: relative;
+  
+}
+.container .btns a{
+  display: flex;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px #000;
 }
 
-.App {
-  max-width: 1920px;
-  max-height: 1080px;
+.container .btns a:hover {
+  transition: ease .1s;
+  opacity: .7;
 }
 
-@media screen and (min-width: 800px) {
+/* @media (min-width: 800px) {
   .App {
     width: auto;
-  }
-
-  .Linha {
-    width: 10%;
-    left: 200px;
   }
 
   .Nav li {
     left: 10%;
   }
-}
-
-.Linha {
-  width: 50%;
-  position: relative;
-  background-color: white;
-  height: 3px;
-  left: 450px;
-  top: 150px;
-}
-
-.Nome {
-  color: white;
-  width: 200px;
-}
-
-.Nav {
-  background-color: #d0e1f9;
-  position: fixed;
-  top: 0px;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-}
-
-.Nav li {
-  display: inline-block;
-  margin-left: 100px;
-  left: 500px;
-  position: relative;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.Nav li:hover {
-  cursor: pointer;
-  color: #4d648d;
-}
+} */

@@ -1,23 +1,34 @@
 import React, { } from 'react';
 import './App.css';
 
-export default function App() {
+interface AppProps {
+  email: string
+}
+
+export default function App(props: AppProps) {
 
   return (
     <div className="App">
-      <h1>Esse é meu primeiro site em React.</h1>
-      <div className="Linha"></div>
-
-      <nav className='Nav'>
-        <ul>
-          <li>Página inicial</li>
-          <li>Sobre mim</li>
-          <li>Contato</li>
-        </ul>
-      </nav>
-
-
+      <header>
+        <div className='menu'>
+          <div className='logo'>Vini</div>
+          <div className='botao'>
+            <div className='linha-menu'></div>
+            <div className='linha-menu'></div>
+            <div className='linha-menu'></div>
+          </div>
+        </div>
+        <div className='linha'></div>
+      </header>
+      <div className='container'>
+        <div className='imagem'></div>
+        <div className='profissao'>React Developer Jr</div>
+        <div className='nome'>Vinícius Moraes</div>
+        <div className='btns'>
+          <a href="#.com">Me contrate</a>
+          <a href="#.com">Saiba mais</a>
+        </div>
+      </div>
     </div>
-
   );
 }
