@@ -2,11 +2,17 @@
   margin: 0px;
   padding: 0px;
 }
+
 .menu {
   display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   justify-content: space-between;
-  padding: 20px;
+  padding: 40px;
 }
+
 .menu .logo {
   text-transform: uppercase;
   cursor: pointer;
@@ -14,9 +20,11 @@
   font-size: 20px;
   letter-spacing: 5px;
 }
+
 .menu .botao {
   cursor: pointer;
 }
+
 .menu .botao .linha-menu {
   width: 25px;
   display: flex;
@@ -25,27 +33,45 @@
   margin: 4px;
   border-radius: 10px;
 }
-.linha {
-  height: 70px;
-  background-color: white;
-  width: 2px;
+
+section {
   display: flex;
-  justify-content: center;
-  position: relative;
-  place-items: center;
+  height: 100vh;
+  width: 100%;
 }
+
+.esquerda {
+  background-color: #c97c7a;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.direita {
+  display: flex;
+  background-color: #1f1106;
+  flex: 1;
+}
+
+.baixo {
+  display: flex;
+  flex: none;
+  flex-flow: column wrap;
+}
+
 .container {
   display: flex;
   color: white;
   align-items: center;
-  width: 50%;
-  height: 70vh;
+  width: 500px;
+  height: 60vh;
   flex-direction: column;
   position: relative;
   top: 15vh;
 }
+
 .imagem {
-  display: block;
+  display: flex;
   background-image: url('img/foto.jpeg');
   background-size: cover;
   background-position: center;
@@ -53,39 +79,61 @@
   height: 300px;
   border-radius: 150px;
 }
+
 .container .nome {
   display: flex;
   font-size: 30px;
 }
+
 .container .profissao {
   display: flex;
   padding: 20px;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+
+.container .links {
+  display: flex;
+
+}
+
+.container .links a {
+  display: flex;
+  margin: 5px;
+}
+
 .container .btns {
   display: flex;
   text-transform: uppercase;
   flex-wrap: wrap;
   justify-content: center;
   letter-spacing: 2px;
-  margin-top: 10px;
-  top: 10px;
-  position: relative;
-  
 }
-.container .btns a{
+
+.container .btns a {
   display: flex;
   background-color: white;
   margin: 20px;
   padding: 20px;
+  font-weight: 700;
   text-decoration: none;
   box-shadow: 0px 0px 10px #000;
+  transition: ease .3s;
 }
 
 .container .btns a:hover {
-  transition: ease .1s;
+  transition: ease .3s;
   opacity: .7;
+}
+
+.baixo {
+  display: flex;
+  height: 100vh;
+  background-color: #d1dbc8;
+}
+.maisbaixo {
+  display: flex;
+  background-color: blue;
 }
 
 /* @media (min-width: 800px) {
