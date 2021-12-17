@@ -5,5 +5,5 @@ Com o tempo eu vou atualizando ele, implementando novas funcionalidades e melhor
 
 My portfolio
 
-This is the 1.0 verision of my portfolio made with ReactJS(TypeScript), HTML e CSS.
+This is the version 1.0 of my portfolio made with ReactJS(TypeScript), HTML e CSS.
 I'll be updating it with the time, putting new features and improving the UI, but for now, I put what I know.
